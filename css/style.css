@@ -6,6 +6,8 @@
 @media (min-width: 360px) {
   li {
     list-style: none; }
+  body {
+    background-color: #adbabb; }
   .titulo-principal {
     width: 100%;
     height: 100px; }
@@ -27,27 +29,61 @@
     margin-top: 20px;
     width: 100%;
     height: auto;
-    background-color: white;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap; }
+  h2 {
+    text-align: center;
+    line-height: 20px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 3;
+    font-size: 40px;
+    -webkit-text-stroke: medium;
+    text-decoration-line: underline; }
   .cards {
-    background-color: #746e6e;
+    height: auto;
+    background-color: #fffefe;
     margin-top: 40px;
     gap: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "div1 div2" "div3 div4"; }
-  .div1 {
-    grid-area: div1; }
-  .div2 {
-    grid-area: div2; }
-  .div3 {
-    grid-area: div3; }
-  .div4 {
-    grid-area: div4; } }
+    grid-template-areas: "sec1 sec2" "sec3 sec4"; }
+    .cards .sec1 {
+      grid-area: sec1;
+      border: 1px solid #020202; }
+    .cards .sec2 {
+      grid-area: sec2;
+      border: 1px solid #020202; }
+    .cards .sec3 {
+      grid-area: sec3;
+      border: 1px solid #020202; }
+    .cards .sec4 {
+      grid-area: sec4;
+      border: 1px solid #020202; }
+    .cards div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .cards div .precios {
+        width: 161px;
+        height: auto; }
+        .cards div .precios p:first-child {
+          color: #858585;
+          text-decoration-line: line-through; }
+        .cards div .precios p:nth-child(2) {
+          color: #5b51e9; }
+        .cards div .precios p:nth-child(3) {
+          font-size: 30px;
+          color: black; }
+        .cards div .precios p:nth-child(4) {
+          width: 110px;
+          background-color: aqua; }
+        .cards div .precios p:nth-child(5) {
+          color: #5b51e9;
+          font-size: 14px; } }
 
 @media (min-width: 768px) {
   .titulo-principal {
