@@ -31,33 +31,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-wrap: wrap; }
-  .stilder {
-    display: flex;
-    width: 100%;
-    animation: cambio 10s infinite alternate linear; }
-    .stilder li {
-      width: 100%; }
-    .stilder img {
-      width: 640px;
-      height: auto; }
-  @keyframes cambio {
-    0% {
-      margin-left: 0; }
-    20% {
-      margin-left: 0; }
-    25% {
-      margin-left: -100%; }
-    45% {
-      margin-left: -100%; }
-    50% {
-      margin-left: -200%; }
-    70% {
-      margin-left: -200%; }
-    75% {
-      margin-left: -300%; }
-    100% {
-      margin-left: -300%; } } }
+    flex-wrap: wrap; } }
 
 @media (min-width: 768px) {
   .titulo-principal {

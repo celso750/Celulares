@@ -26,33 +26,6 @@ margin-top:20px;
 background-color: rgb(255, 255, 255);
 @include prop-flex(space-evenly,center,wrap);
 }
-.stilder{
-    display: flex;
-    width: 100%;
-    animation: cambio 10s infinite
-    alternate linear;
-    li{
-        width: 100%;
-    }
-    img{
-        width: 640px;
-        height: auto;
-    }
-}
-@keyframes cambio {
-    0%{margin-left: 0;}
-    20%{margin-left:0;}
-    
-    25%{margin-left: -100%;}
-    45%{margin-left: -100%;}
-
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left: -300%;}
-}
-
 
 
 
