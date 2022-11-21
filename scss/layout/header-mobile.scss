@@ -27,8 +27,25 @@ background-color: rgb(255, 255, 255);
 @include prop-flex(space-evenly,center,wrap);
 }
 
+.cards{
+    background-color: rgb(116, 110, 110);
+    margin-top: 40px;
+    gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+        "div1 div2"
+        "div3 div4";
+    }
+    
+.div1{grid-area: div1};
 
+    .div2{grid-area: div2};
 
+    .div3{grid-area: div3};
+
+    .div4{grid-area: div4};
 
 
 
